@@ -8,7 +8,7 @@ var statement_date_parts = statement_date.split(" ");
 var statement_date_day = statement_date_parts[0];
 var statement_date_month = statement_date_parts[1].replace('Jan', '01').replace('Feb', '02').replace('Mar', '03').replace('Apr', '04').replace('May', '05').replace('Jun', '06').replace('Jul', '07').replace('Aug', '08').replace('Sep', '09').replace('Oct', '10').replace('Nov', '11').replace('Dec', '12');
 var statement_date_year = statement_date_parts[2];
-var statement_date_chron = statement_date_year + ' ' + statement_date_month + ' ' + statement_date_day;
+var statement_date_chron = statement_date_year + '-' + statement_date_month + '-' + statement_date_day;
 
 // build header
 $('thead th', $table).each(function(){
